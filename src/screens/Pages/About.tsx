@@ -20,7 +20,7 @@ const navigationItems = [
 
 export const About = (): JSX.Element => {
   return (
-    <div className="bg-black w-full flex flex-col about">
+    <div className="bg-black w-full flex flex-col ">
         <nav className="sticky top-[22px] z-50 flex justify-center px-4">
         <div className="bg-white rounded-[50px] h-[64px] flex items-center justify-center gap-14 px-12 max-w-[700px] w-full">
           <Button

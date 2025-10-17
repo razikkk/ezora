@@ -22,8 +22,8 @@ const navigationItems = [
 export  const ElementDefault = (): JSX.Element => {
   return (
     <div className="bg-black w-full flex flex-col overflow-hidden">
-      <nav className="sticky top-[22px] z-50 flex justify-center px-4">
-        <div className="bg-white rounded-[50px] h-[74px] flex items-center justify-center gap-8 px-12 max-w-[775px] w-full">
+    <nav className="sticky top-[22px] z-50 flex justify-center px-4">
+        <div className="bg-white rounded-[50px] h-[64px] flex items-center justify-center gap-14 px-12 max-w-[700px] w-full">
           <Button
             variant="ghost"
             className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
