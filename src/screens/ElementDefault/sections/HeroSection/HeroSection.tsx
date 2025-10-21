@@ -4,7 +4,7 @@ import { Button } from "../../../../components/ui/button";
 export const HeroSection = (): JSX.Element => {
   return (
     <section className="relative w-full h-[713px]">
-      <div className="absolute w-full h-[calc(100%_-_62px)] -top-20 left-0 bg-[url(/background-wrap---background-image---hero-background.png)] bg-cover bg-[50%_50%]" />
+      <div className="absolute w-full h-[calc(100%_-_62px)] -top-[112px] left-0 bg-[url(/background-wrap---background-image---hero-background.png)] bg-cover bg-[50%_50%]" />
 
       <div className="relative w-full h-full flex items-center justify-center px-[100px]">
         <div className="flex flex-col gap-8 max-w-[572px]">
@@ -32,7 +32,7 @@ export const HeroSection = (): JSX.Element => {
           </div>
 
           <div className="flex gap-6 items-center justify-center">
-            <Button className="w-[170.16px] h-14 bg-[#519b91] hover:bg-[#458075] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
+            <Button className="w-[170.16px] h-14 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
               Explore Now
               <img
                 className="w-6 h-4 ml-2"

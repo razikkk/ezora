@@ -34,8 +34,8 @@ export const TestimonialSection = (): JSX.Element => {
     <section className="w-full flex items-center justify-center bg-black py-24">
       <div className="w-full max-w-[1240px] px-4">
         <header className="text-center mb-16">
-          <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-white text-5xl tracking-[-1.44px] leading-[57.6px] mb-4">
-            What Our Travelers Are Saying
+          <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-[#2C6672] text-5xl tracking-[-1.44px] leading-[57.6px] mb-4">
+            What Our Travelers Are Saying!
           </h2>
           <div className="flex flex-col gap-[1.4px] items-center">
             <p className="[font-family:'DM_Sans',Helvetica] font-normal text-neutral-300 text-base text-center tracking-[-0.48px] leading-[22.4px]">
@@ -147,9 +147,10 @@ export const TestimonialSection = (): JSX.Element => {
             ))}
           </div>
 
-          <div className="flex justify-center">
+            {/* swipe icon */}
+          <div className="flex justify-center"> 
             <img
-              className="h-[72px]"
+              className="h-[72px] "
               alt="Slideshow pagination controls"
               src="/fieldset---slideshow-pagination-controls.svg"
             />

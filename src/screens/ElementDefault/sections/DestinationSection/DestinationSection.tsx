@@ -31,7 +31,7 @@ export const DestinationSection = (): JSX.Element => {
         <div className="flex flex-col gap-16">
           <div className="flex items-start justify-between gap-8">
             <div className="flex flex-col gap-4 flex-1">
-              <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-white text-5xl tracking-[-1.44px] leading-[57.6px]">
+              <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px]">
                 Explore Popular Destinations
               </h2>
               <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#e0e0e0] text-base tracking-[-0.48px] leading-[22.4px]">
@@ -43,7 +43,7 @@ export const DestinationSection = (): JSX.Element => {
 
             <Button
               variant="outline"
-              className="h-14 px-8 rounded-full border-[#519b91] bg-transparent hover:bg-[#519b91]/10 text-white"
+              className="h-14 px-8 rounded-full border-[#22535D] bg-transparent  text-white"
             >
               <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-base tracking-[-0.48px]">
                 Browse All Destination

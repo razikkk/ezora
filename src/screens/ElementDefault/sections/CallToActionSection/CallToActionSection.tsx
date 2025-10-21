@@ -29,7 +29,7 @@ export const CallToActionSection = (): JSX.Element => {
           placeholder="Enter your email"
           className="flex-1 h-14 rounded-[999px] border-[#cfd1d0] px-6 [font-family:'DM_Sans',Helvetica] font-normal text-[#4e5255] text-base tracking-[-0.48px]"
         />
-        <Button className="h-14 px-[26px] bg-[#519b91] hover:bg-[#458075] rounded-[999px] [font-family:'DM_Sans',Helvetica] font-semibold text-black text-base tracking-[-0.48px]">
+        <Button className="h-14 px-[26px] bg-[#22535D] hover:bg-[#2C6672] rounded-[999px] [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
           Subscribe
         </Button>
       </div>

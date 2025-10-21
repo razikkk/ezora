@@ -10,52 +10,35 @@ import { GallerySection } from "../ElementDefault/sections/GallerySection";
 import { VideoReelsSection } from "../ElementDefault/sections/VideoReelsSection/VideoReelsSection";
 import { CallToActionSection } from "../ElementDefault/sections/CallToActionSection";
 import { FooterDesktopSection } from "../ElementDefault/sections/FooterDesktopSection";
+import { Link } from "react-router-dom";
+
 
 const navigationItems = [
-  { label: "home", href: "#home" },
-  { label: "Packages", href: "#packages" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Destination", path: "/destination" },
+    { label: "Contact", path: "/contact" },
+  ];
 
 export const About = (): JSX.Element => {
   return (
     <div className="bg-black w-full flex flex-col ">
-        <nav className="sticky top-[22px] z-50 flex justify-center px-4">
-        <div className="bg-white rounded-[50px] h-[64px] flex items-center justify-center gap-14 px-12 max-w-[700px] w-full">
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[0].label}
-          </Button>
+     <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
+  <div className="bg-[#22535D] rounded-[50px] h-[64px] flex items-center justify-center gap-12 px-10 max-w-[500px] w-full shadow-lg">
+    {navigationItems.map((item, i) => (
+      <Link key={i} to={item.path}>
+        <Button
+          variant="ghost"
+          className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-base text-white tracking-[-0.48px] hover:bg-transparent"
+        >
+          {item.label}
+        </Button>
+      </Link>
+    ))}
+  </div>
+</nav>
 
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[1].label}
-          </Button>
 
-          <div className="[font-family:'Font_Awesome_6_Brands-Regular',Helvetica] font-normal text-[26px] text-black tracking-[-0.48px] whitespace-nowrap">
-            LOGO
-          </div>
-
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[2].label}
-          </Button>
-
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[3].label}
-          </Button>
-        </div>
-      </nav>
 
       <div className="w-full bg-black">
         <AboutHeroSection />

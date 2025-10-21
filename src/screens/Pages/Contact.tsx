@@ -1,10 +1,11 @@
-import React from "react";
+
 import { Button } from "../../components/ui/button";
+import { ContactFormSection } from "../ElementDefault/sections/CallForm/CallForm";
+import { ContactInfoSection } from "../ElementDefault/sections/CallInfoSection/CallInfoSection";
 import { CallToActionSection } from "../ElementDefault/sections/CallToActionSection";
-import { FooterDesktopSection } from "../ElementDefault/sections/FooterDesktopSection";
-import { DestinationHeroSection } from "../ElementDefault/sections/DestinationHeroSection/DestinationHeroSection";
-import { Packages } from "../ElementDefault/sections/Packages/Packages";
 import { FaqSection } from "../ElementDefault/sections/FaqSection";
+import { FooterDesktopSection } from "../ElementDefault/sections/FooterDesktopSection";
+import { VideoReelsSection } from "../ElementDefault/sections/VideoReelsSection/VideoReelsSection";
 import { Link } from "react-router-dom";
 
 
@@ -14,11 +15,13 @@ const navigationItems = [
     { label: "Destination", path: "/destination" },
     { label: "Contact", path: "/contact" },
   ];
+  
+  export const Contact = (): JSX.Element => {
+    return (
 
-export const Destination = (): JSX.Element => {
-  return (
-    <div className="bg-black w-full flex flex-col ">
-      <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
+<section className="relative w-full bg-black">
+  {/* Navbar */}
+  <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
   <div className="bg-[#22535D] rounded-[50px] h-[64px] flex items-center justify-center gap-12 px-10 max-w-[500px] w-full shadow-lg">
     {navigationItems.map((item, i) => (
       <Link key={i} to={item.path}>
@@ -33,13 +36,13 @@ export const Destination = (): JSX.Element => {
   </div>
 </nav>
 
-      <div className="w-full bg-black">
-      <DestinationHeroSection />
-      <Packages />
-      <FaqSection />
-      <CallToActionSection />
-      <FooterDesktopSection />
-      </div>
-    </div>
-  );
+  <ContactFormSection/>
+  <ContactInfoSection/>
+  <FaqSection/>
+  <VideoReelsSection/>
+  <CallToActionSection/>
+  <FooterDesktopSection/>
+  </section>
+
+);
 };

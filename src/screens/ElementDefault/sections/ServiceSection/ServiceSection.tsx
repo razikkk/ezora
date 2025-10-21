@@ -29,7 +29,7 @@ export const ServiceSection = (): JSX.Element => {
     <section className="w-full flex items-center justify-center bg-black py-24">
       <div className="w-full max-w-[1240px] px-4">
         <div className="flex flex-col items-center gap-3 mb-14">
-          <h2 className="font-bold text-white text-5xl text-center tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
+          <h2 className="font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
             Our Popular Activities
           </h2>
 
@@ -54,7 +54,7 @@ export const ServiceSection = (): JSX.Element => {
                   style={{ backgroundImage: `url(${service.image})` }}
                 />
                 <div className="flex flex-col gap-[12.5px]">
-                  <h3 className="font-semibold text-white text-2xl tracking-[-0.48px] leading-[28.8px] [font-family:'Urbanist',Helvetica]">
+                  <h3 className="font-semibold text-[#22535D] text-2xl tracking-[-0.48px] leading-[28.8px] [font-family:'Urbanist',Helvetica]">
                     {service.title}
                   </h3>
                   <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-base tracking-[-0.48px] leading-[22.4px]">
@@ -69,7 +69,7 @@ export const ServiceSection = (): JSX.Element => {
         <div className="flex justify-center">
           <Button
             variant="outline"
-            className="h-14 px-8 rounded-full border-[#519b91] bg-transparent text-white hover:bg-[#519b91]/10 hover:text-white"
+            className="h-14 px-8 rounded-full border-[#22535D] bg-transparent text-white hover:bg-[#519b91]/10 hover:text-white"
           >
             <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-base tracking-[-0.48px] leading-4">
               Browse All Activities

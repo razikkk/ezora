@@ -11,7 +11,7 @@ const navigationItems = [
 export const DestinationHeroSection = (): JSX.Element => {
   return (
     <section className="relative w-full h-[638px]">
-      <div className="absolute inset-0 w-full h-[calc(100%-100px)] bg-[url(/destinationHeroBanner.png)] bg-cover bg-center" />
+      <div className="absolute w-full -top-[112px] h-[calc(100%-100px)] bg-[url(/destinationHeroBanner.png)] bg-cover bg-center" />
 
       
 

@@ -38,10 +38,14 @@ export const FooterDesktopSection = (): JSX.Element => {
     <div className="max-w-[1200px] mx-auto px-[120px] py-[120px]">
       <div className="grid grid-cols-12 gap-8">
         <div className="col-span-4 flex flex-col gap-14">
-          <div className="flex flex-col gap-[43.2px]">
-            <div className="[font-family:'Font_Awesome_6_Brands-Regular',Helvetica] font-normal text-white text-[44px] tracking-[-0.48px] leading-[86.4px]">
-              LOGO
-            </div>
+          <div className="flex flex-col gap-[10px]">
+          <div className="flex items-center">
+    <img
+      src="/Logos-04.png" // 👉 replace with your logo path
+      alt="Logo"
+      className="w-[170px] h-auto object-contain -ml-[40px]" // adjust size as needed
+    />
+  </div>
 
             <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#e7e7e7] text-base tracking-[-0.48px] leading-[22.4px]">
               Explore amazing destinations with ease. We plan

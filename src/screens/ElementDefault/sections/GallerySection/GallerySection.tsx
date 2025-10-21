@@ -5,7 +5,7 @@ export const GallerySection = (): JSX.Element => {
     <section className="relative w-full bg-black py-20">
       <div className="flex flex-col items-center gap-14">
         <div className="flex flex-col items-center gap-7">
-          <h2 className="font-bold text-white text-5xl text-center tracking-[-1.44px] leading-[57.6px] whitespace-nowrap [font-family:'Urbanist',Helvetica]">
+          <h2 className="font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] whitespace-nowrap [font-family:'Urbanist',Helvetica]">
             Discover the Moments
           </h2>
 

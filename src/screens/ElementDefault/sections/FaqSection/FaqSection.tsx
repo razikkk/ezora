@@ -41,7 +41,7 @@ export const FaqSection = (): JSX.Element => {
     <section className="w-full flex flex-col lg:flex-row gap-8 lg:gap-[116px] px-5 py-12">
       <div className="w-full lg:w-[392px] flex flex-col gap-11">
         <div className="flex flex-col gap-[12.6px]">
-          <h2 className="font-bold text-white text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
+          <h2 className="font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
             Frequently Asked <br />
             Questions
           </h2>
@@ -53,7 +53,7 @@ export const FaqSection = (): JSX.Element => {
           </p>
         </div>
 
-        <Button className="w-[161.41px] h-14 bg-[#519b91] hover:bg-[#458075] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] gap-2">
+        <Button className="w-[161.41px] h-14 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] gap-2">
           Contact Us
           <img
             className="w-6 h-6"
@@ -64,22 +64,22 @@ export const FaqSection = (): JSX.Element => {
       </div>
 
       <div className="w-full lg:flex-1 flex flex-col gap-8">
-        <Accordion type="single" collapsible className="w-full space-y-8">
+        <Accordion type="single" collapsible className="w-full space-y-4">
           {faqItems.map((item, index) => (
             <AccordionItem
               key={item.id}
               value={item.id}
-              className={`border border-solid border-[#3c3c3c] rounded-[50px] px-5 py-5 ${
+              className={`border border-solid border-[#22535D] rounded-[50px] px-1 py-1 ${
                 index % 2 === 1 ? "ml-2 -mr-2" : ""
               }`}
             >
               <AccordionTrigger className="hover:no-underline [&[data-state=open]>div>.chevron]:rotate-90">
                 <div className="flex items-center justify-between w-full">
-                  <span className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-2xl tracking-[-0.48px] leading-[28.8px] text-left">
+                  <span className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-2xl tracking-[-0.48px] leading-[28.8px] ml-4">
                     {item.question}
                   </span>
-                  <div className="flex items-center justify-center w-12 h-12 rounded-3xl border border-solid border-[#519b91] ml-4 flex-shrink-0">
-                    <ChevronRightIcon className="chevron w-5 h-5 text-[#519b91] transition-transform duration-200" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-3xl border border-solid border-[#22535D] mr-2 flex-shrink-0">
+                    <ChevronRightIcon className="chevron w-5 h-5 text-[#22535D] transition-transform duration-200" />
                   </div>
                 </div>
               </AccordionTrigger>

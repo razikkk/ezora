@@ -28,7 +28,7 @@ export const AboutUsSection = (): JSX.Element => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-4 flex flex-col gap-11">
             <div className="flex flex-col gap-3">
-              <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-white text-5xl tracking-[-1.44px] leading-[57.6px]">
+              <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px]">
                 Join the Adventure <br />
                 with Ezora!
               </h2>
@@ -40,7 +40,7 @@ export const AboutUsSection = (): JSX.Element => {
               </p>
             </div>
 
-            <Button className="w-fit bg-[#519b91] hover:bg-[#458075] rounded-full h-14 px-8 gap-2">
+            <Button className="w-fit bg-[#22535D] hover:bg-[#2C6672] rounded-full h-14 px-8 gap-2">
               <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
                 Learn More
               </span>
@@ -83,7 +83,7 @@ export const AboutUsSection = (): JSX.Element => {
           <div className="lg:col-span-3 flex flex-col gap-14">
             {statistics.map((stat, index) => (
               <div key={index} className="flex flex-col gap-1">
-                <div className="[font-family:'Urbanist',Helvetica] text-white text-5xl leading-normal whitespace-nowrap">
+                <div className="[font-family:'Urbanist',Helvetica] text-[#22535D] text-5xl leading-normal whitespace-nowrap">
                   <span className="font-semibold">{stat.value}</span>
                   <span className="font-bold">{stat.suffix}</span>
                 </div>

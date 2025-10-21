@@ -35,7 +35,7 @@ export const WhyChooseUsSection = (): JSX.Element => {
       <div className="w-full max-w-[1240px] px-5 flex flex-col gap-14">
         <header className="flex items-start justify-between gap-4">
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-white text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
+            <h2 className="font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
               Why Choose Ezora?
             </h2>
             <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dedede] text-base tracking-[-0.48px] leading-[22.4px]">
@@ -45,7 +45,7 @@ export const WhyChooseUsSection = (): JSX.Element => {
               and trusted companies in the world.
             </p>
           </div>
-          <Button className="h-14 px-8 bg-[#519b91] hover:bg-[#458075] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
+          <Button className="h-14 px-8 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
             Contact Us
             <ArrowRightIcon className="ml-2 w-4 h-4" />
           </Button>
@@ -68,7 +68,7 @@ export const WhyChooseUsSection = (): JSX.Element => {
                 src={feature.icon}
               />
               <div className="flex flex-col gap-2">
-                <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-2xl tracking-[-0.48px] leading-[28.8px]">
+                <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#2C6672] text-2xl tracking-[-0.48px] leading-[28.8px]">
                   {feature.title}
                 </h3>
                 <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#cdcdcd] text-base tracking-[-0.48px] leading-[22.4px]">

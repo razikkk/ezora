@@ -11,52 +11,41 @@ import { HeroSection } from "../ElementDefault/sections/HeroSection";
 import { ServiceSection } from "../ElementDefault/sections/ServiceSection";
 import { TestimonialSection } from "../ElementDefault/sections/TestimonialSection";
 import { WhyChooseUsSection } from "../ElementDefault/sections/WhyChooseUsSection";
+import { Link } from "react-router-dom";
+
 
 const navigationItems = [
-  { label: "home", href: "/" },
-  { label: "Packages", href: "/packages" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
-];
+    { label: "Home", path: "/" },
+    { label: "About", path: "/about" },
+    { label: "Destination", path: "/destination" },
+    { label: "Contact", path: "/contact" },
+  ];
 
+  
 export  const ElementDefault = (): JSX.Element => {
   return (
     <div className="bg-black w-full flex flex-col overflow-hidden">
-    <nav className="sticky top-[22px] z-50 flex justify-center px-4">
-        <div className="bg-white rounded-[50px] h-[64px] flex items-center justify-center gap-14 px-12 max-w-[700px] w-full">
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[0].label}
-          </Button>
+      <img
+    src="/Logos-04.png" // 👉 replace with your image path
+    alt="Top Left"
+    className="absolute top-0 left-4 w-[200px] h-auto z-50"
+  />
+       <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
+  <div className="bg-[#22535D] rounded-[50px] h-[64px] flex items-center justify-center gap-12 px-10 max-w-[500px] w-full shadow-lg">
+    {navigationItems.map((item, i) => (
+      <Link key={i} to={item.path}>
+        <Button
+          variant="ghost"
+          className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-base text-white tracking-[-0.48px] hover:bg-transparent"
+        >
+          {item.label}
+        </Button>
+      </Link>
+    ))}
+  </div>
+</nav>
 
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[1].label}
-          </Button>
 
-          <div className="[font-family:'Font_Awesome_6_Brands-Regular',Helvetica] font-normal text-[26px] text-black tracking-[-0.48px] whitespace-nowrap">
-            LOGO
-          </div>
-
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[2].label}
-          </Button>
-
-          <Button
-            variant="ghost"
-            className="h-auto px-0 [font-family:'Poppins',Helvetica] font-medium text-xl text-black tracking-[-0.48px] hover:bg-transparent"
-          >
-            {navigationItems[3].label}
-          </Button>
-        </div>
-      </nav>
 
       <main className="flex-1 w-full">
         <HeroSection />
