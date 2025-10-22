@@ -8,28 +8,29 @@ export const HeroSection = (): JSX.Element => {
 
       <div className="relative w-full h-full flex items-center justify-center px-[100px]">
         <div className="flex flex-col gap-8 max-w-[572px]">
-          <div className="flex flex-col gap-[24.5px]">
-            <div className="relative">
-              <div className="absolute w-[53.00%] left-[240px]  top-[70px] h-[68px] bg-white rounded-lg" />
+        <div className="flex flex-col gap-6 px-4 md:px-0">
+  <div className="relative flex justify-center">
+    {/* White background behind text */}
+    <div className="absolute bg-white rounded-lg w-[53%] h-[68px] left-[240px] top-[70px] hidden md:block" />
 
-              <h1 className="relative font-extrabold text-[56px] tracking-[-1.12px] leading-[67.2px] text-center [font-family:'Urbanist',Helvetica]">
-                <span className="text-white tracking-[-0.63px]">
-                  Let Us Turn Your Travel <br />
-                  Dreams&nbsp;&nbsp;
-                </span>
+    <h1 className="relative font-extrabold text-[32px] md:text-[56px] leading-[42px] md:leading-[67.2px] text-center [font-family:'Urbanist',Helvetica]">
+      <span className="text-white tracking-[-0.63px]">
+        Let Us Turn Your Travel <br className="hidden md:block" />
+        Dreams&nbsp;
+      </span>
+      <span className="text-[#519b91] tracking-[-0.63px]">
+        Into Reality
+      </span>
+    </h1>
+  </div>
 
-                <span className="text-[#519b91] tracking-[-0.63px]">
-                  Into Reality
-                </span>
-              </h1>
-            </div>
+  <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-sm md:text-base tracking-[-0.48px] leading-[22.4px] text-center px-4 md:px-0">
+    Explore amazing destinations with ease. We plan everything for
+    you, from flights <br className="hidden md:block" />
+    to stays, so you can relax and enjoy unforgettable adventures.
+  </p>
+</div>
 
-            <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base tracking-[-0.48px] leading-[22.4px] text-center">
-              Explore amazing destinations with ease. We plan everything for
-              you, from flights <br />
-              to stays, so you can relax and enjoy unforgettable adventures.
-            </p>
-          </div>
 
           <div className="flex gap-6 items-center justify-center">
             <Button className="w-[170.16px] h-14 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">

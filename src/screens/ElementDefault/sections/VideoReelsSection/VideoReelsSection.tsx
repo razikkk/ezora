@@ -63,7 +63,7 @@ export const VideoReelsSection = (): JSX.Element => {
     <section className="w-full py-20 relative">
       <div className="container mx-auto px-4">
         <header className="flex flex-col items-center gap-3 mb-[148px]">
-          <h2 className="font-bold text-white text-5xl text-center tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
+          <h2 className="font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
             Travel Stories You Can Feel
           </h2>
           <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#e2e2e2] text-base text-center tracking-[-0.48px] leading-[22.4px]">

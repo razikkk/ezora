@@ -81,8 +81,8 @@ export const Packages = (): JSX.Element => {
               variant={category.active ? "default" : "outline"}
               className={`h-auto rounded-full px-4 py-2 ${
                 category.active
-                  ? "bg-[#519b91] hover:bg-[#519b91]/90 text-white border-0"
-                  : "bg-transparent border-[#cfd1d0] text-white hover:bg-white/10"
+                  ? "bg-[#22535D] hover:bg-[#2C6672]/90 text-white border-0"
+                  : "bg-transparent border-[#22535D] text-white "
               }`}
             >
               <span className="[font-family:'DM_Sans',Helvetica] font-normal text-base tracking-[-0.48px] leading-[22.4px]">
@@ -115,7 +115,7 @@ export const Packages = (): JSX.Element => {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#519b91] text-2xl tracking-[-0.48px] leading-[28.8px]">
+                    <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-2xl tracking-[-0.48px] leading-[28.8px]">
                       {destination.title}
                     </h3>
 
@@ -135,7 +135,7 @@ export const Packages = (): JSX.Element => {
         <div className="flex justify-center">
           <Button
             variant="outline"
-            className="h-auto rounded-[1000px] border-[#519b91] bg-transparent text-white hover:bg-white/10 px-6 py-4"
+            className="h-auto rounded-[1000px] border-[#22535D] bg-transparent text-white hover:bg-white px-6 py-4"
           >
             <span className="[font-family:'Urbanist',Helvetica] font-semibold text-xl tracking-[0] leading-6">
               Load More

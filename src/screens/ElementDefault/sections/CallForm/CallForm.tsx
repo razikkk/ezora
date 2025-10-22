@@ -49,7 +49,7 @@ import {
                 />
   
                 <div className="flex flex-col gap-[12.5px]">
-                  <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px] whitespace-nowrap">
+                  <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px] whitespace-nowrap">
                     Respond in 2-3 hours
                   </h2>
   
@@ -62,7 +62,7 @@ import {
               </div>
             </div>
   
-            <Card className="flex-1 bg-white rounded-[32px] border-0 shadow-none">
+            <Card className="flex-1 bg-[#22535D] rounded-[32px] border-0 shadow-none">
               <CardContent className="p-8">
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col gap-8">
@@ -114,7 +114,7 @@ import {
                     </div>
                   </div>
   
-                  <Button className="h-14 bg-[#111318] hover:bg-[#111318]/90 rounded-[999px] [font-family:'DM_Sans',Helvetica] font-semibold text-base tracking-[-0.48px]">
+                  <Button className="h-14 bg-white hover:bg-white/90 rounded-[999px] [font-family:'DM_Sans',Helvetica] font-semibold text-base text-[#22535D] tracking-[-0.48px]">
                     Submit Message
                     <ArrowRightIcon className="ml-2 w-4 h-4" />
                   </Button>

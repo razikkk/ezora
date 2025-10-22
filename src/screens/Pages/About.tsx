@@ -43,7 +43,7 @@ export const About = (): JSX.Element => {
       <div className="w-full bg-black">
         <AboutHeroSection />
         <AboutStorySection />
-        <TrustedSection />
+        {/* <TrustedSection /> */}
         <WhyChooseUsSection />
         <TestimonialSection />
         <GallerySection />

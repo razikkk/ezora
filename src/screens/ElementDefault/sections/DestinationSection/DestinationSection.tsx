@@ -75,7 +75,7 @@ export const DestinationSection = (): JSX.Element => {
                     </div>
 
                     <div className="flex flex-col gap-2">
-                      <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#519b91] text-2xl tracking-[-0.48px] leading-[28.8px]">
+                      <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-2xl tracking-[-0.48px] leading-[28.8px]">
                         {destination.name}
                       </h3>
 

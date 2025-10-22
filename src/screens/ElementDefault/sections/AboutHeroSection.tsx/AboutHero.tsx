@@ -39,14 +39,20 @@ export const AboutHeroSection = (): JSX.Element => {
       <div className="max-w-[1240px] mx-auto">
         <div className="flex flex-col items-center gap-14">
           <div className="flex flex-col items-center gap-6 max-w-[873px]">
-            <header className="flex flex-col items-center gap-[0.2px]">
-              <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-white text-[56px] text-center tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
-                We Are World Best Travel
-              </h1>
-              <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-white text-[56px] text-center tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
-                Agency Company Since 2000
-              </h1>
-            </header>
+          <header className="flex flex-col items-center gap-[0.2px] text-center">
+  <div className="flex flex-wrap justify-center items-center gap-2">
+    <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
+      We Are World Best
+    </h1>
+    <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-white text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
+      Travel Agency
+    </h1>
+  </div>
+
+  <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
+    Company Since 2000
+  </h1>
+</header>
 
             <div className="flex flex-col items-center gap-[1.4px]">
               <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-base text-center tracking-[-0.48px] leading-[22.4px] whitespace-nowrap">
@@ -58,7 +64,7 @@ export const AboutHeroSection = (): JSX.Element => {
               </p>
             </div>
 
-            <Button className="h-14 w-[170px] bg-[#519b91] hover:bg-[#458075] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] gap-2">
+            <Button className="h-14 w-[170px] bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] gap-2">
               Explore Now
               <img
                 className="w-6 h-4"

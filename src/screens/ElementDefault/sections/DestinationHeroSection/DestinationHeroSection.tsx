@@ -18,10 +18,11 @@ export const DestinationHeroSection = (): JSX.Element => {
       <Card className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[62px] w-[calc(100%-240px)] h-[333px] bg-black rounded-3xl border-0">
         <CardContent className="relative w-full h-full p-0">
           <div className="absolute top-1/2 -translate-y-1/2 left-[122px] flex flex-col gap-[16.7px] w-[calc(100%-638px)]">
-            <h1 className="w-[551.52px] [font-family:'Urbanist',Helvetica] font-extrabold text-white text-[56px] tracking-[-1.12px] leading-[67.2px]">
-              Explore Unforgettable <br />
-              Tour and Destinations
-            </h1>
+          <h1 className="w-[551.52px] [font-family:'Urbanist',Helvetica] font-extrabold text-[56px] tracking-[-1.12px] leading-[67.2px] text-white">
+  Explore Unforgettable <br />
+  <span className="text-[#22535D]">Tour</span> and <span className="text-[#22535D]">Destinations</span>
+</h1>
+
 
             <p className="w-[518.51px] [font-family:'DM_Sans',Helvetica] font-normal text-[#e7e7e7] text-base tracking-[-0.48px] leading-[22.4px]">
               Find your next adventure with Ezora. From relaxing retreats to

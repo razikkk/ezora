@@ -35,7 +35,7 @@ export const ContactInfoSection = (): JSX.Element => {
   return (
     <section className="w-full flex items-center justify-center bg-black py-20">
       <div className="w-full max-w-[1240px] px-5">
-        <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-white text-5xl text-center tracking-[-1.44px] leading-[57.6px] mb-[58px]">
+        <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] mb-[58px]">
           Find Us Here
         </h2>
 
@@ -44,19 +44,19 @@ export const ContactInfoSection = (): JSX.Element => {
             {locations.map((location, index) => (
               <Card
                 key={index}
-                className="bg-white rounded-3xl border border-[#cfd1d0]"
+                className="bg-[#22535D] rounded-3xl border border-[#cfd1d0]"
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="flex-1 flex flex-col gap-[16.5px] mb-6">
-                    <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#111318] text-xl tracking-[0] leading-6">
+                    <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-xl tracking-[0] leading-6">
                       {location.title}
                     </h3>
-                    <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#4e5255] text-base tracking-[-0.48px] leading-[22.4px] whitespace-pre-line">
+                    <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base tracking-[-0.48px] leading-[22.4px] whitespace-pre-line">
                       {location.address}
                     </p>
                   </div>
                   <button className="flex items-center gap-[7.5px] w-fit">
-                    <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-[#519b91] text-base tracking-[-0.48px] leading-6">
+                    <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] leading-6">
                       View Map
                     </span>
                     <img
