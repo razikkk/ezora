@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const navigationItems = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
-    { label: "Destination", path: "/destination" },
+    // { label: "Destination", path: "/destination" },
     { label: "Contact", path: "/contact" },
   ];
   
