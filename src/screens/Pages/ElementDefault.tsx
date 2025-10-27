@@ -32,11 +32,13 @@ const navigationItems = [
   <img
   src="/Logos-02.png" // 👉 replace with your image path
   alt="Top Left"
+  data-aos="fade-right"
   className="absolute top-0 left-0 sm:top-4 sm:left-0 w-[250px] h-auto z-50 object-contain"
 />
 
 
-      <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
+      <nav className="sticky top-4 z-50 flex justify-center px-4 py-6"
+      >
         {/* Desktop Nav */}
         <div className="hidden md:flex bg-[#22535D] rounded-[50px] h-[64px] items-center justify-center gap-12 px-10 max-w-[500px] w-full shadow-lg">
           {navigationItems.map((item, i) => (
@@ -52,7 +54,8 @@ const navigationItems = [
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center justify-between w-full px-4">
+        <div className="md:hidden flex items-center justify-between w-full px-4"
+         >
           <div className="flex-1"></div>
 
           {/* Hamburger / Cross Button */}

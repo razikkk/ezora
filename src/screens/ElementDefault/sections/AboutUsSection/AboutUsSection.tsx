@@ -92,19 +92,22 @@ export const AboutUsSection = (): JSX.Element => {
                 src="/background-shape---shape.svg"
               />
 
-              <div className="absolute top-[18px] left-[18px] w-[calc(100%_-_18px)] h-[125px]">
-                <img
-                  className="absolute w-[70px] h-[70px] top-0 left-0"
-                  alt="Icon"
-                  src="/icon---icon.svg"
-                />
+<div className="absolute top-[18px] left-[18px] w-[calc(100%_-_18px)] h-[125px]">
+  <img
+    className="absolute w-[70px] h-[70px] top-0 left-0"
+    alt="Icon"
+    src="/icon---icon.svg"
+  />
 
-                <div className="absolute bottom-0 left-0">
-                  <div className="[font-family:'Urbanist',Helvetica] font-semibold text-[#001d22] text-[25.7px] tracking-[-0.51px] leading-[30.8px] whitespace-nowrap">
-                    15+ Awards
-                  </div>
-                </div>
-              </div>
+  {/* 👉 Move slightly left on mobile using negative left */}
+  <div className="absolute bottom-0 -left-4 sm:left-2 transition-all duration-300">
+    <div className="[font-family:'Urbanist',Helvetica] font-semibold text-[#001d22] text-[25.7px] tracking-[-0.51px] leading-[30.8px] whitespace-nowrap">
+      15+ Awards
+    </div>
+  </div>
+</div>
+
+
             </CardContent>
           </Card>
         </div>
