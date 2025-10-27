@@ -4,8 +4,17 @@ import {About} from "./screens/Pages/About";
 import { Destination } from "./screens/Pages/Destination";
 import { DestinationDetails } from "./screens/Pages/DestinationDetails";
 import { Contact } from "./screens/Pages/Contact";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+    useEffect(() => {
+        AOS.init({
+          easing: "linear", // Easing type
+          once: true, // Run only once
+        });
+      }, []);
   return (
     <Router>
       <Routes>

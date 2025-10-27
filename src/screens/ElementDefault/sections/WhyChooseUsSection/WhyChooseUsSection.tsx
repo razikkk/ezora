@@ -35,17 +35,20 @@ export const WhyChooseUsSection = (): JSX.Element => {
       <div className="w-full max-w-[1240px] px-5 flex flex-col gap-14">
         <header className="flex items-start justify-between gap-4">
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]">
+            <h2 className="font-bold text-[#22535D] text-5xl tracking-[-1.44px] leading-[57.6px] [font-family:'Urbanist',Helvetica]"
+            data-aos="zoom-out" >
               Why Choose Ezora?
             </h2>
-            <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dedede] text-base tracking-[-0.48px] leading-[22.4px]">
+            <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dedede] text-base tracking-[-0.48px] leading-[22.4px]"
+            data-aos="zoom-out">
               At Ezora, we&apos;re proud to partner with some of the most
               innovative
               <br />
               and trusted companies in the world.
             </p>
           </div>
-          <Button className="h-14 px-8 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
+          <Button className="h-14 px-8 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]"
+          data-aos="zoom-out" >
             Contact Us
             <ArrowRightIcon className="ml-2 w-4 h-4" />
           </Button>
@@ -61,7 +64,11 @@ export const WhyChooseUsSection = (): JSX.Element => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[70px] gap-y-[56px]">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-8">
+            <div key={index} className="flex items-start gap-8"
+            data-aos="zoom-out"
+      data-aos-delay={index * 200} // delay 0ms, 200ms, 400ms, etc.
+      data-aos-duration="800"      
+      data-aos-once="true">
               <img
                 className="w-[68px] h-[68px] flex-shrink-0"
                 alt="Icon wrap"

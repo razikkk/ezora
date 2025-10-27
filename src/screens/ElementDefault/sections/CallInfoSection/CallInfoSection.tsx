@@ -34,54 +34,72 @@ const contactInfo = [
 export const ContactInfoSection = (): JSX.Element => {
   return (
     <section className="w-full flex items-center justify-center bg-black py-20">
-      <div className="w-full max-w-[1240px] px-5">
-        <h2 className="[font-family:'Urbanist',Helvetica] font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] mb-[58px]">
-          Find Us Here
-        </h2>
-
-        <div className="flex flex-col lg:flex-row gap-6">
-          <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-5">
-            {locations.map((location, index) => (
-              <Card
-                key={index}
-                className="bg-[#22535D] rounded-3xl border border-[#cfd1d0]"
-              >
-                <CardContent className="p-6 flex flex-col h-full">
-                  <div className="flex-1 flex flex-col gap-[16.5px] mb-6">
-                    <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-xl tracking-[0] leading-6">
-                      {location.title}
-                    </h3>
-                    <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base tracking-[-0.48px] leading-[22.4px] whitespace-pre-line">
-                      {location.address}
-                    </p>
-                  </div>
-                  <button className="flex items-center gap-[7.5px] w-fit">
-                    <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] leading-6">
-                      View Map
-                    </span>
-                    <img
-                      className="w-6 h-6"
-                      alt="Icon wrap icon arrow"
-                      src="/call-icon-wrap---icon---fvblnoysu2gfs4mlgl24mw2yqi-svg.svg"
-                    />
-                  </button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="lg:w-[255px] flex flex-col gap-3">
-            {contactInfo.map((info, index) => (
-              <div key={index} className="flex items-center gap-4 h-12">
-                <img className="h-12 w-12" alt="Icon wrap" src={info.icon} />
-                <span className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dbdbdb] text-base tracking-[-0.48px] leading-[22.4px]">
-                  {info.text}
-                </span>
-              </div>
-            ))}
-          </div>
+    <div className="w-full max-w-[1240px] px-5">
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="0"
+        className="[font-family:'Urbanist',Helvetica] font-bold text-[#22535D] text-5xl text-center tracking-[-1.44px] leading-[57.6px] mb-[58px]"
+      >
+        Find Us Here
+      </h2>
+  
+      <div className="flex flex-col lg:flex-row gap-6">
+        {/* Location Cards */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-3 gap-5">
+          {locations.map((location, index) => (
+            <Card
+              key={index}
+              data-aos="zoom-out"
+              data-aos-delay={index * 200} // Staggered animation
+              className="bg-[#22535D] rounded-3xl border border-[#cfd1d0]"
+            >
+              <CardContent className="p-6 flex flex-col h-full">
+                <div className="flex-1 flex flex-col gap-[16.5px] mb-6">
+                  <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-xl tracking-[0] leading-6">
+                    {location.title}
+                  </h3>
+                  <p className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base tracking-[-0.48px] leading-[22.4px] whitespace-pre-line">
+                    {location.address}
+                  </p>
+                </div>
+                <button className="flex items-center gap-[7.5px] w-fit">
+                  <span className="[font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] leading-6">
+                    View Map
+                  </span>
+                  <img
+                    className="w-6 h-6"
+                    alt="Icon wrap icon arrow"
+                    src="/call-icon-wrap---icon---fvblnoysu2gfs4mlgl24mw2yqi-svg.svg"
+                  />
+                </button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+  
+        {/* Contact Info Section */}
+        <div
+          data-aos="fade-left"
+          data-aos-delay={locations.length * 200}
+          className="lg:w-[255px] flex flex-col gap-3"
+        >
+          {contactInfo.map((info, index) => (
+            <div
+              key={index}
+              data-aos="fade-left"
+              data-aos-delay={locations.length * 200 + index * 150}
+              className="flex items-center gap-4 h-12"
+            >
+              <img className="h-12 w-12" alt="Icon wrap" src={info.icon} />
+              <span className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dbdbdb] text-base tracking-[-0.48px] leading-[22.4px]">
+                {info.text}
+              </span>
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };

@@ -28,12 +28,14 @@ const navigationItems = [
   export  const ElementDefault = (): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="bg-black w-full flex flex-col overflow-hidden">
-      <img
-    src="/Logos-04.png" // 👉 replace with your image path
-    alt="Top Left"
-    className="absolute top-0 left-4 w-[200px] h-auto z-50"
-  />
+    <div className="bg-black w-full flex flex-col ">
+  <img
+  src="/Logos-02.png" // 👉 replace with your image path
+  alt="Top Left"
+  className="absolute top-0 left-0 sm:top-4 sm:left-0 w-[250px] h-auto z-50 object-contain"
+/>
+
+
       <nav className="sticky top-4 z-50 flex justify-center px-4 py-6">
         {/* Desktop Nav */}
         <div className="hidden md:flex bg-[#22535D] rounded-[50px] h-[64px] items-center justify-center gap-12 px-10 max-w-[500px] w-full shadow-lg">
@@ -109,7 +111,7 @@ const navigationItems = [
 
       <main className="flex-1 w-full">
         <HeroSection />
-        <DestinationSection />
+        {/* <DestinationSection /> */}
         <AboutUsSection />
         <ServiceSection />
         <WhyChooseUsSection />

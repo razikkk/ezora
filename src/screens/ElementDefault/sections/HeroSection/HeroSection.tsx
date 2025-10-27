@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+
 import { Button } from "../../../../components/ui/button";
+import {motion} from 'framer-motion'
 
 export const HeroSection = (): JSX.Element => {
+
+
+
   return (
     <section className="relative w-full h-[713px]">
       <div className="absolute w-full h-[calc(100%_-_62px)] -top-[112px] left-0 bg-[url(/background-wrap---background-image---hero-background.png)] bg-cover bg-[50%_50%]" />
@@ -14,13 +19,37 @@ export const HeroSection = (): JSX.Element => {
     <div className="absolute bg-white rounded-lg w-[53%] h-[68px] left-[240px] top-[70px] hidden md:block" />
 
     <h1 className="relative font-extrabold text-[32px] md:text-[56px] leading-[42px] md:leading-[67.2px] text-center [font-family:'Urbanist',Helvetica]">
-      <span className="text-white tracking-[-0.63px]">
-        Let Us Turn Your Travel <br className="hidden md:block" />
-        Dreams&nbsp;
-      </span>
-      <span className="text-[#519b91] tracking-[-0.63px]">
-        Into Reality
-      </span>
+     <motion.span
+  initial={{ y: -60, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{
+    type: "spring",
+    stiffness: 100,
+    damping: 12,
+    duration: 0.7,
+  }}
+  viewport={{ once: true }}
+  className="text-white tracking-[-0.63px]"
+>
+  Let Us Turn Your Travel <br className="hidden md:block" />
+  Dreams&nbsp;
+</motion.span>
+
+<motion.span
+  initial={{ y: -60, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{
+    type: "spring",
+    stiffness: 100,
+    damping: 12,
+    duration: 0.7,
+    delay: 0.2,
+  }}
+  viewport={{ once: true }}
+  className="text-[#519b91] tracking-[-0.63px]"
+>
+  Into Reality
+</motion.span>
     </h1>
   </div>
 
@@ -33,7 +62,8 @@ export const HeroSection = (): JSX.Element => {
 
 
           <div className="flex gap-6 items-center justify-center">
-            <Button className="w-[170.16px] h-14 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]">
+            <Button className="w-[170.16px] h-14 bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px]"
+           >
               Explore Now
               <img
                 className="w-6 h-4 ml-2"

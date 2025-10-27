@@ -35,86 +35,129 @@ const destinationImages = [
 
 export const AboutHeroSection = (): JSX.Element => {
   return (
-    <section className="w-full py-20 px-5">
-      <div className="max-w-[1240px] mx-auto">
-        <div className="flex flex-col items-center gap-14">
-          <div className="flex flex-col items-center gap-6 max-w-[873px]">
-          <header className="flex flex-col items-center gap-[0.2px] text-center">
-  <div className="flex flex-wrap justify-center items-center gap-2">
-    <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
-      We Are World Best
-    </h1>
-    <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-white text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
-      Travel Agency
-    </h1>
-  </div>
-
-  <h1 className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-[56px] tracking-[-1.12px] leading-[67.2px] whitespace-nowrap">
-    Company Since 2000
-  </h1>
-</header>
-
-            <div className="flex flex-col items-center gap-[1.4px]">
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-base text-center tracking-[-0.48px] leading-[22.4px] whitespace-nowrap">
-                Find your next adventure with Ezora. From relaxing retreats to
-                exciting
-              </p>
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-base text-center tracking-[-0.48px] leading-[22.4px] whitespace-nowrap">
-                explorations, we&apos;ve got the perfect destination for you!
-              </p>
-            </div>
-
-            <Button className="h-14 w-[170px] bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-base tracking-[-0.48px] gap-2">
-              Explore Now
-              <img
-                className="w-6 h-4"
-                alt="Arrow icon"
-                src="/icon-wrap---icon---fvblnoysu2gfs4mlgl24mw2yqi-svg.svg"
-              />
-            </Button>
-          </div>
-
-          <div className="w-full grid grid-cols-5 gap-5">
-            {destinationImages.map((destination, index) => (
-              <div
-                key={index}
-                className={`${
-                  destination.isCenter ? "col-span-2" : "col-span-1"
-                } rounded-[30px] overflow-hidden`}
+    <section className="w-full py-16 px-4 sm:px-6 md:py-20 md:px-8">
+    <div className="max-w-[1240px] mx-auto">
+      <div className="flex flex-col items-center gap-12 md:gap-14">
+  
+        {/* === TEXT SECTION === */}
+        <div className="flex flex-col items-center gap-6 max-w-[873px] text-center px-2">
+  
+          <header className="flex flex-col items-center gap-1">
+  
+            <div className="flex flex-wrap justify-center items-center gap-2">
+              <h1
+                className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-3xl sm:text-4xl md:text-[56px] tracking-[-1.12px] leading-tight md:leading-[67.2px]"
+                data-aos="fade-up"
+                data-aos-delay="0"
+                data-aos-duration="800"
               >
-                {destination.isCenter ? (
-                  <Card className="relative h-[327px] rounded-3xl overflow-hidden border-0 bg-transparent">
-                    <CardContent className="p-0 h-full">
-                      <div
-                        className="h-full w-full bg-cover bg-center"
-                        style={{ backgroundImage: `url(${destination.src})` }}
-                      >
-                        <div className="absolute w-full h-full top-0 left-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_61%,rgba(0,0,0,1)_100%)] opacity-40" />
-                        <div className="absolute w-full left-0 bottom-0 h-[89px] gap-2 bg-[#00000003] rounded-[0px_0px_24px_24px] backdrop-blur-[17.35px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(17.35px)_brightness(100%)] flex flex-col px-[21px] py-[15px]">
-                          <div className="flex items-center gap-2">
-                            <MapPinIcon className="w-4 h-4 text-white" />
-                            <span className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-base tracking-[-0.48px] leading-[22.4px] whitespace-nowrap">
-                              {destination.location}
-                            </span>
-                          </div>
-                          <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-2xl tracking-[-0.48px] leading-[28.8px] whitespace-nowrap">
-                            {destination.title}
-                          </h3>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                ) : (
-                  <div
-                    className="h-[327px] w-full rounded-2xl bg-cover bg-center"
-                    style={{ backgroundImage: `url(${destination.src})` }}
-                  />
-                )}
-              </div>
-            ))}
+                We Are World Best
+              </h1>
+  
+              <h1
+                className="[font-family:'Urbanist',Helvetica] font-extrabold text-white text-3xl sm:text-4xl md:text-[56px] tracking-[-1.12px] leading-tight md:leading-[67.2px]"
+                data-aos="fade-up"
+                data-aos-delay="150"
+                data-aos-duration="800"
+              >
+                Travel Agency
+              </h1>
+            </div>
+  
+            <h1
+              className="[font-family:'Urbanist',Helvetica] font-extrabold text-[#22535D] text-3xl sm:text-4xl md:text-[56px] tracking-[-1.12px] leading-tight md:leading-[67.2px]"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
+              Company Since 2000
+            </h1>
+  
+          </header>
+  
+          <div className="flex flex-col items-center gap-1">
+            <p
+              className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-sm sm:text-base leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="450"
+              data-aos-duration="700"
+            >
+              Find your next adventure with Ezora. From relaxing retreats to exciting
+            </p>
+            <p
+              className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadada] text-sm sm:text-base leading-relaxed"
+              data-aos="fade-up"
+              data-aos-delay="550"
+              data-aos-duration="700"
+            >
+              explorations, we&apos;ve got the perfect destination for you!
+            </p>
           </div>
+  
+          <Button
+            className="h-12 sm:h-14 w-[160px] sm:w-[170px] bg-[#22535D] hover:bg-[#2C6672] rounded-full [font-family:'DM_Sans',Helvetica] font-semibold text-white text-sm sm:text-base tracking-[-0.48px] gap-2"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            data-aos-duration="700"
+          >
+            Explore Now
+            <img
+              className="w-5 sm:w-6 h-4"
+              alt="Arrow icon"
+              src="/icon-wrap---icon---fvblnoysu2gfs4mlgl24mw2yqi-svg.svg"
+            />
+          </Button>
+        </div>
+  
+        {/* === IMAGE GRID === */}
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 md:gap-5">
+          {destinationImages.map((destination, index) => (
+            <div
+              key={index}
+              className={`${
+                destination.isCenter
+                  ? "col-span-2 sm:col-span-2 md:col-span-2"
+                  : "col-span-1"
+              } rounded-[20px] md:rounded-[30px] overflow-hidden`}
+              data-aos="zoom-in"
+              data-aos-delay={800 + index * 100} // staggered animation
+              data-aos-duration="700"
+            >
+              {destination.isCenter ? (
+                <Card className="relative h-[220px] sm:h-[260px] md:h-[327px] rounded-3xl overflow-hidden border-0 bg-transparent group">
+                  <CardContent className="p-0 h-full">
+                    <div
+                      className="h-full w-full bg-cover bg-center transition-all duration-500 ease-in-out opacity-60 group-hover:opacity-100 group-hover:scale-105"
+                      style={{ backgroundImage: `url(${destination.src})` }}
+                    >
+                      <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-b from-transparent to-black/70 opacity-50 transition-opacity duration-500 group-hover:opacity-70" />
+                      <div className="absolute w-full left-0 bottom-0 h-[80px] sm:h-[89px] gap-1 sm:gap-2 bg-[#00000003] rounded-b-[24px] backdrop-blur-[17px] flex flex-col px-[16px] sm:px-[21px] py-[10px] sm:py-[15px]">
+                        <div className="flex items-center gap-1 sm:gap-2">
+                          <MapPinIcon className="w-3 sm:w-4 h-3 sm:h-4 text-white" />
+                          <span className="[font-family:'DM_Sans',Helvetica] font-normal text-white text-xs sm:text-sm tracking-[-0.48px]">
+                            {destination.location}
+                          </span>
+                        </div>
+                        <h3 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-lg sm:text-2xl tracking-[-0.48px] leading-tight">
+                          {destination.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ) : (
+                <div
+                  className="h-[220px] sm:h-[260px] md:h-[327px] w-full rounded-2xl bg-cover bg-center transition-all duration-500 ease-in-out opacity-60 hover:opacity-100 hover:scale-105"
+                  style={{ backgroundImage: `url(${destination.src})` }}
+                />
+              )}
+            </div>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
+  
   );
 };

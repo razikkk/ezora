@@ -32,14 +32,17 @@ export const AboutStorySection = (): JSX.Element => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-3">
             <div className="flex items-baseline gap-2">
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]"
+     data-aos="zoom-out">
       Our
     </h2>
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]"
+    data-aos="zoom-out">
       Story
     </h2>
   </div>
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#d7d7d7] text-base tracking-[-0.48px] leading-[22.4px]">
+              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#d7d7d7] text-base tracking-[-0.48px] leading-[22.4px]"
+              data-aos="zoom-out">
                 Since 2000, we've been passionate about making travel simple,
                 enjoyable, and memorable. What started as a small idea has grown
                 into a trusted travel agency, helping thousands explore the
@@ -60,14 +63,18 @@ export const AboutStorySection = (): JSX.Element => {
           <div className="flex flex-col gap-12">
             <div className="flex flex-col gap-3">
             <div className="flex items-baseline gap-2">
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]"
+    data-aos="zoom-out">
       Our
     </h2>
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]"
+    data-aos="zoom-out">
        Mission
     </h2>
   </div>
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadbdc] text-base tracking-[-0.48px] leading-[22.4px]">
+              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadbdc] text-base tracking-[-0.48px] leading-[22.4px]"
+              data-aos="zoom-out"
+              >
                 Our mission is to make travel easy, enjoyable, and
                 unforgettable. We create personalized experiences, provide
                 excellent service, and promote sustainable tourism. Our goal is
@@ -75,10 +82,10 @@ export const AboutStorySection = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4" >
               {statsData.map((stat, index) => (
                 <Card key={index} className="bg-[#22535D] border-0 rounded-xl">
-                  <CardContent className="p-8 flex flex-col gap-1">
+                  <CardContent className="p-8 flex flex-col gap-1" data-aos="zoom-out" data-aos-delay='500'>
                     <div className="[font-family:'Urbanist',Helvetica] text-white text-5xl leading-[normal]">
                       <span className="font-semibold">{stat.value}</span>
                       <span className="font-bold">{stat.suffix}</span>
@@ -93,14 +100,15 @@ export const AboutStorySection = (): JSX.Element => {
 
             <div className="flex flex-col gap-3">
             <div className="flex items-baseline gap-2">
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-[#22535D] text-[40px] tracking-[-1.20px] leading-[48px]" data-aos="zoom-out" >
       Our
     </h2>
-    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]">
+    <h2 className="[font-family:'Urbanist',Helvetica] font-semibold text-white text-[40px] tracking-[-1.20px] leading-[48px]" data-aos="zoom-out" >
       Vision
     </h2>
   </div>
-              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadbdc] text-base tracking-[-0.48px] leading-[22.4px]">
+              <p className="[font-family:'DM_Sans',Helvetica] font-normal text-[#dadbdc] text-base tracking-[-0.48px] leading-[22.4px]"
+              data-aos="zoom-out" >
                 Our vision is to inspire a love for travel, connecting people to
                 the beauty and diversity of the world. We aim to redefine the
                 way you explore by delivering experiences that are immersive,
